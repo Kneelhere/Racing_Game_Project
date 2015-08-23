@@ -3,9 +3,11 @@
 function Game() {
   //Create a new instance of player 1
   //this.player1 = ...
+  this.player1 = prompt("What username would you like to use?");
 
   //Do the same for a player 2
   //this.player2 = ...
+  this.player2 = prompt("What username would you like to use?");
 
   //Create the track
   //this.track = ...

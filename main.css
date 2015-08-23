@@ -1,1 +1,65 @@
 /* Style Sheet */
+
+.track1{
+	max-width: 700px;
+	margin: 10px auto;
+}
+
+.track1:after {
+	content:"";
+	display: table-row;
+	clear: both;
+}
+
+.lane1 {
+  float: left;
+  width: 60%;
+  margin-left: 20%;
+}
+
+
+.track2 {
+	max-width: 700px;
+	margin: 10px auto;
+}
+
+.track2:after {
+	content:"";
+	display: table-row;
+	clear: both;
+}
+
+.lane2 {
+  float: left;
+  width: 60%;
+  margin-left: 20%;
+}
+
+table {
+  margin: auto;
+}
+
+table tr td {
+  height: 20px;
+  width: 30px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+
+.dot {
+	margin: auto;
+	height: 13px;
+	width: 13px;
+	border-radius: 15px;
+}
+
+.dot1 {
+	background: yellow;
+}
+
+.dot2{
+	background: red;
+}
+

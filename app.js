@@ -3,15 +3,17 @@
 function Game() {
   //Create a new instance of player 1
   //this.player1 = ...
-  this.player1 = prompt("What username would you like to use?");
+  //var player1 = window.prompt("What username would you like to use?");
+  this.player1 = player1;
 
   //Do the same for a player 2
   //this.player2 = ...
-  this.player2 = prompt("What username would you like to use?");
+  //var player2 = window.prompt("What username would you like to use?");
+  this.player2 = player2;
 
   //Create the track
   //this.track = ...
-}
+};
 
 // `Game.prototype.init` kicks off a new game with a board and two players
 Game.prototype.init = function() {
@@ -40,4 +42,4 @@ function Track() {
 
 // Start the game!
 var game = new Game();
-game.init();
+game;

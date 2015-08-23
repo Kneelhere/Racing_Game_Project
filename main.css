@@ -1,5 +1,9 @@
 /* Style Sheet */
 
+h1 {
+	text-align: center;
+}
+
 .track1{
 	max-width: 700px;
 	margin: 10px auto;
@@ -36,7 +40,7 @@
 }
 
 table {
-  margin: auto;
+  margin: 10px;
 }
 
 table tr td {

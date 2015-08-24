@@ -73,7 +73,6 @@ function playGame(){
     if (event.which === 97) {
       counter1++;
       $('.first:nth-child(' + counter1 + ')').html('<img src="http://i105.photobucket.com/albums/m219/trexrell/flash_zps15f35f5c.gif" width="auto" height= "50px" margin:"auto">');
-      $('.first:nth-child(' + counter1 - 1 + ')').empty('background:""');
       if (counter1 === 8) {
         alert("Player 1 won!")
       }

@@ -5,6 +5,16 @@ function Game() {
   //this.player1 = ...
   //var player1 = window.prompt("What username would you like to use?");
   //this.player1 = player1;
+  if ($('#hero').val() === "0") {
+    $('#box').click(function() {
+      $(this).html('<img src="http://i105.photobucket.com/albums/m219/trexrell/flash_zps15f35f5c.gif" width="auto" height= "50px" margin="auto">');
+    })
+  }
+  if ($('#hero').val() === "1") {
+    $('#box').click(function() {
+      $(this).html('<img src= "http://www.puppstheories.com/spriterips/BatmanReturns6fWalk.gif" width="auto" height="50px" margin="auto">');
+    })
+  }
 
   //Do the same for a player 2
   //this.player2 = ...

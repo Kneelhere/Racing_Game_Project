@@ -4,6 +4,10 @@ h1 {
 	text-align: center;
 }
 
+p {
+	text-align: center;
+}
+
 
 .flash {
 	content:url(http://i105.photobucket.com/albums/m219/trexrell/flash_zps15f35f5c.gif);
@@ -12,8 +16,36 @@ h1 {
 	margin: auto;
 }
 
+.batman {
+	content:url(http://www.puppstheories.com/spriterips/BatmanReturns6fWalk.gif);
+	width: auto;
+	height: 50px;
+	margin: auto;
+}
+
+.wonderwoman {
+	content:url(http://mmii.info/icons/lightspeeddash/supers_WonderWomanSprite.gif);
+	width: auto;
+	height: 50px;
+	margin: auto;
+}
+
 .rflash {
 	content:url(http://i.imgur.com/LDWD1.gif);
+	width: auto;
+	height: 50px;
+	margin: auto;
+}
+
+.thejoker {
+	content:url(http://www.puppstheories.com/spriterips/JokerWalk7fSNES.gif);
+	width: auto;
+	height: 50px;
+	margin: auto;
+}
+
+.giganta {
+	content:url(http://img.photobucket.com/albums/v243/deanjo2000/gigantagrow.gif);
 	width: auto;
 	height: 50px;
 	margin: auto;

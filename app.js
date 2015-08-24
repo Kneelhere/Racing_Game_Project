@@ -44,18 +44,25 @@ function Track() {
 var game = new Game();
 game;
 
+//$('#hero').val();
 
 function playGame(){
     var counter1 = 0;
     var counter2 = 0;
   $(window).keypress(function(event) {
-    if (event.which === 8) {
+    if (event.which === 97) {
       counter1++;
-      $('td:nth-child(' + counter1 + ')').append('hello');
+      $('.first:nth-child(' + counter1 + ')').html('<img src="http://i105.photobucket.com/albums/m219/trexrell/flash_zps15f35f5c.gif" width="auto" height= "50px" margin:"auto">');
+      if (counter1 === 8) {
+        alert("Player 1 won!")
+      }
     }
-    if (event.which === 9) {
+    if (event.which === 108) {
       counter2++;
-      $('td:nth-child(' + counter2 + ')').append("yo");
+      $('.second:nth-child(' + counter2 + ')').html('<img src="http://i.imgur.com/LDWD1.gif" width="auto" height="50px" margin:"auto">');
+      if (counter2 === 8) {
+        alert("player 2 won!")
+      }
     }
   })
 }

@@ -4,12 +4,12 @@ function Game() {
   //Create a new instance of player 1
   //this.player1 = ...
   //var player1 = window.prompt("What username would you like to use?");
-  this.player1 = player1;
+  //this.player1 = player1;
 
   //Do the same for a player 2
   //this.player2 = ...
   //var player2 = window.prompt("What username would you like to use?");
-  this.player2 = player2;
+  //this.player2 = player2;
 
   //Create the track
   //this.track = ...
@@ -43,3 +43,24 @@ function Track() {
 // Start the game!
 var game = new Game();
 game;
+
+
+function playGame(){
+    var counter1 = 0;
+    var counter2 = 0;
+  $(window).keypress(function(event) {
+    if (event.which === 8) {
+      counter1++;
+      $('td:nth-child(' + counter1 + ')').append('hello');
+    }
+    if (event.which === 9) {
+      counter2++;
+      $('td:nth-child(' + counter2 + ')').append("yo");
+    }
+  })
+}
+
+
+$(document).ready(function() {
+  playGame();
+})

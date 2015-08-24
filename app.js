@@ -5,16 +5,26 @@ function Game() {
   //this.player1 = ...
   //var player1 = window.prompt("What username would you like to use?");
   //this.player1 = player1;
-  if ($('#hero').val() === "0") {
-    $('#box').click(function() {
-      $(this).html('<img src="http://i105.photobucket.com/albums/m219/trexrell/flash_zps15f35f5c.gif" width="auto" height= "50px" margin="auto">');
-    })
-  }
-  if ($('#hero').val() === "1") {
-    $('#box').click(function() {
-      $(this).html('<img src= "http://www.puppstheories.com/spriterips/BatmanReturns6fWalk.gif" width="auto" height="50px" margin="auto">');
-    })
-  }
+
+  $('.flash').click(function() {
+    $("#box").html('<img src="http://i105.photobucket.com/albums/m219/trexrell/flash_zps15f35f5c.gif" width="auto" height= "50px" margin="auto">')
+  })
+  $('.batman').click(function() {
+    $('#box').html('<img src= "http://www.puppstheories.com/spriterips/BatmanReturns6fWalk.gif" width="auto" height="50px" margin="auto">')
+  })
+  $('.wonderwoman').click(function(){
+    $('#box').html('<img src= "http://mmii.info/icons/lightspeeddash/supers_WonderWomanSprite.gif" width="auto" height="50px" margin= "auto">')
+  })
+
+  $('.rflash').click(function(){
+    $('#square').html('<img src= "http://i.imgur.com/LDWD1.gif" width="auto" height="50px" margin="auto">')
+  })
+  $('.thejoker').click(function(){
+    $('#square').html('<img src= "http://www.puppstheories.com/spriterips/JokerWalk7fSNES.gif" width="auto" height="50px" margin="auto">')
+  })
+  $('.giganta').click(function(){
+    $('#square').html('<img src= "http://img.photobucket.com/albums/v243/deanjo2000/gigantagrow.gif" width="auto" height="50px" margin="auto">')
+  })
 
   //Do the same for a player 2
   //this.player2 = ...
@@ -63,6 +73,7 @@ function playGame(){
     if (event.which === 97) {
       counter1++;
       $('.first:nth-child(' + counter1 + ')').html('<img src="http://i105.photobucket.com/albums/m219/trexrell/flash_zps15f35f5c.gif" width="auto" height= "50px" margin:"auto">');
+      $('.first:nth-child(' + counter1 - 1 + ')').empty('background:""');
       if (counter1 === 8) {
         alert("Player 1 won!")
       }
@@ -79,5 +90,6 @@ function playGame(){
 
 
 $(document).ready(function() {
+  Game();
   playGame();
 })
